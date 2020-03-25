@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-st" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement Samples</title>
+</head>
+
+<body>
+    <button onclick="multipleCase();">Multiple Case</button>
+    <script>
+        function multipleCase() {
+            let color = 'Red';
+            switch (color) {
+                case 'Red':
+                case 'Pink':
+                    console.log('The color is Red');
+                    break;
+                case 'Blue':
+                case 'Light Blue':
+                case 'Dark Blue':
+                    console.log('color is Blue');
+                    break;
+                case 'Gray':
+                case 'Grey':
+
+                    console.log('The color is Grey');
+                    break;
+                default:
+                    console.log('Unknow Colors')
+            }
+        }
+    </script>
+</body>
+
+</html>
