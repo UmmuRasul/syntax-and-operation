@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue</title>
+</head>
+
+<body>
+    <button onclick="continueSample();">continue</button>
+
+    <script>
+        'use strict';
+
+        let products = [{
+            "productID": 680,
+            "name": "HL Road Frame - Black, 58",
+            "productNumber": "FR-R928-58",
+            "color": "Black",
+            "standardCost": 1059.31,
+            "listPrice": 1431.50
+        }, {
+            "productID": 707,
+            "name": "Sport-100 Helmemt, Red",
+            "productNumber": "HL-U509",
+            "color": "Red",
+            "standardCost": 13.08,
+            "listPrice": 34.99
+        }, {
+            "productID": 709,
+            "name": "Mountain Bike Socks, M",
+            "productNumber": "SO-B909-M",
+            "color": "White",
+            "standardCost": 3.3963,
+            "listPrice": 9.50
+        }];
+
+        //use the continue statement
+        function continueSample() {
+            for (const item of products) {
+                if (item.standardCost < 1000) {
+                    continue;
+                }
+                console.log(JSON.stringify(item));
+            }
+        }
+    </script>
+</body>
+
+</html>
