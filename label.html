@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Statement</title>
+</head>
+
+<body>
+    <button onclick="labelSample();">Label Statement</button>
+    <script>
+        'use strict';
+
+        function labelSample() {
+            even: //label named even when oops oes o the label
+                for (let index = 1; index <= 10; index++) {
+                if (index % 2 == 1) {
+                    continue even;
+                }
+                console.log(index);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
